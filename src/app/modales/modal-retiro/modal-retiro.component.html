@@ -1,0 +1,54 @@
+<section style="background-color: white;min-height: 100%; width: 600px;">
+    <br>
+    <h4 style="text-align: center;">Valor a retirar {{valorARetirar}}</h4>
+    <br />
+    <div class="row" style="margin: 0;">
+        
+        <div class="col">
+            <div style="background-image: url('./assets/Diez.jpg'); width: 100px; height: 100px; background-size: 100%;border-radius: 20px; background-position: center;border-radius: 20px; display: flex; justify-content: center; align-items: end;">
+                <h4 style="color: white; border: solid; border-radius: 20px;"><b>{{cantidadBilletesDiezEntregados}}</b></h4>
+            </div>
+        </div>
+        <div class="col">
+            <div style="background-image: url('./assets/Veinte.jpg'); width: 100px; height: 100px; background-size: 100%;border-radius: 20px;border-radius: 20px; display: flex; justify-content: center; align-items: end;">
+                <h4 style="color: white; border: solid; border-radius: 20px;"><b>{{cantidadBilletesVeinteEntregados}}</b></h4>
+            </div>
+        </div>
+        <div class="col">
+            <div style="background-image: url('./assets/Cincuenta.jpg'); width: 100px; height: 100px; background-size: 100%;border-radius: 20px; display: flex; justify-content: center; align-items: end;">
+                <h4 style="color: white; border: solid; border-radius: 20px;"><b>{{cantidadBilletesCincuentaEntregados}}</b></h4>
+            </div>
+        </div>
+        <div class="col">
+            <div style="background-image: url('./assets/Cien.jpg'); width: 100px; height: 100px; background-size: 100%;border-radius: 20px;border-radius: 20px; display: flex; justify-content: center; align-items: end;">
+                <h4 style="color: white; border: solid; border-radius: 20px;"><b>{{cantidadBilletesCienEntregados}}</b></h4>
+            </div>
+        </div>
+    </div>
+    
+      
+    <div class="row justify-content-center" style="margin: 0;">
+        <div class="terminal">
+            <table style="width: 100%;">
+                <thead>
+                    <tr style="color: white;">
+                        <th scope="col">100K</th>
+                        <th scope="col">50K</th>
+                        <th scope="col">20K</th>
+                        <th scope="col">10K</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="color: white;" *ngFor="let item of TableBilletes">
+                        <td style="color: white;">{{item.Cien}}</td>
+                        <td>{{item.Cincuenta}}</td>
+                        <td>{{item.Veinte}}</td>
+                        <td>{{item.Diez}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    
+</section>
